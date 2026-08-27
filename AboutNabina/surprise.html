@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Surprise — Nabina Universe</title>
+
+    <meta
+        name="description"
+        content="A little surprise from Nabina Universe."
+    >
+
+    <meta name="author" content="Nabina Universe">
+    <meta name="theme-color" content="#100b10">
+
+    <meta property="og:title" content="Surprise — Nabina Universe">
+    <meta
+        property="og:description"
+        content="There is something waiting for you."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://nabina.example/surprise.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="surprise-page">
+
+    <div class="page-transition" aria-hidden="true">
+        <div class="transition-symbol">♡</div>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navigasi utama">
+
+            <a href="index.html" class="brand page-link">
+                <span class="brand-name">NABINA</span>
+                <span class="brand-heart">♡</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html" class="nav-link page-link">
+                    Home
+                </a>
+
+                <a href="about.html" class="nav-link page-link">
+                    About
+                </a>
+
+                <a href="gallery.html" class="nav-link page-link">
+                    Gallery
+                </a>
+
+                <a href="notes.html" class="nav-link page-link">
+                    Notes
+                </a>
+
+                <a
+                    href="surprise.html"
+                    class="nav-link active"
+                    aria-current="page"
+                >
+                    Surprise
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button
+                    type="button"
+                    class="music-button"
+                    id="musicToggle"
+                    aria-label="Putar ambience"
+                    aria-pressed="false"
+                >
+                    <span class="music-icon">♫</span>
+                </button>
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuToggle"
+                    aria-label="Buka menu"
+                    aria-expanded="false"
+                    aria-controls="mobileMenu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="index.html" class="mobile-link page-link">
+                Home
+            </a>
+
+            <a href="about.html" class="mobile-link page-link">
+                About
+            </a>
+
+            <a href="gallery.html" class="mobile-link page-link">
+                Gallery
+            </a>
+
+            <a href="notes.html" class="mobile-link page-link">
+                Notes
+            </a>
+
+            <a
+                href="surprise.html"
+                class="mobile-link active"
+                aria-current="page"
+            >
+                Surprise
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="surprise-hero">
+
+            <div class="surprise-orbit orbit-one"></div>
+            <div class="surprise-orbit orbit-two"></div>
+            <div class="surprise-orbit orbit-three"></div>
+
+            <div class="surprise-content reveal">
+
+                <p class="eyebrow">
+                    04 · SURPRISE
+                </p>
+
+                <div class="surprise-symbol">
+                    ♡
+                </div>
+
+                <h1>
+                    You made it
+                    <em>this far.</em>
+                </h1>
+
+                <p class="surprise-intro">
+                    Jadi kayaknya kamu pantas mendapatkan
+                    satu hal kecil.
+                </p>
+
+                <button
+                    type="button"
+                    class="surprise-button"
+                    id="surpriseButton"
+                >
+                    <span>Open it</span>
+                    <span aria-hidden="true">♡</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <div class="letter-overlay" id="letterOverlay" aria-hidden="true">
+
+            <div class="letter-backdrop" data-letter-close></div>
+
+            <section class="love-letter" id="loveLetter" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+
+                <button
+                    type="button"
+                    class="letter-close"
+                    id="letterClose"
+                    aria-label="Tutup surat"
+                >
+                    ×
+                </button>
+
+                <div class="letter-paper">
+                    <p class="letter-date">A little note, just for you</p>
+
+                    <h2 id="letterTitle">Untuk kamu, <em>yang selalu punya tempat.</em></h2>
+
+                    <div class="letter-rule"><span>♡</span></div>
+
+                    <div class="letter-body" id="letterBody" aria-live="polite"></div>
+
+                    <p class="letter-signature">
+                        Dengan sedikit rasa yang sulit dijelaskan,
+                        <br>
+                        <em>selalu.</em> ♡
+                    </p>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <p>
+                NABINA <span>♡</span>
+            </p>
+
+            <p>
+                made softly, with a little care
+            </p>
+
+            <p>
+                © <span id="currentYear"></span>
+                Nabina Universe
+            </p>
+
+        </div>
+    </footer>
+
+    <audio id="ambience" loop preload="none">
+        <source
+            src="assets/audio/Nadhif Basalamah - penjaga hati Lirik.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>

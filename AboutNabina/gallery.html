@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery — Nabina Universe</title>
+
+    <meta
+        name="description"
+        content="Gallery Nabina — kumpulan kecil dari foto, momen, dan kenangan yang ingin disimpan."
+    >
+
+    <meta name="author" content="Nabina Universe">
+    <meta name="theme-color" content="#f5f2ec">
+
+    <meta property="og:title" content="Gallery — Nabina Universe">
+    <meta
+        property="og:description"
+        content="A little collection of memories."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://nabina.example/gallery.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-transition" aria-hidden="true">
+        <div class="transition-symbol">♡</div>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navigasi utama">
+
+            <a
+                href="index.html"
+                class="brand page-link"
+                aria-label="Kembali ke halaman utama"
+            >
+                <span class="brand-name">NABINA</span>
+                <span class="brand-heart" aria-hidden="true">♡</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link page-link">Home</a>
+
+                <a href="about.html" class="nav-link page-link">
+                    About
+                </a>
+
+                <a
+                    href="gallery.html"
+                    class="nav-link active"
+                    aria-current="page"
+                >
+                    Gallery
+                </a>
+
+                <a href="notes.html" class="nav-link page-link">
+                    Notes
+                </a>
+
+                <a href="surprise.html" class="nav-link page-link">
+                    Surprise
+                </a>
+            </div>
+
+            <div class="nav-actions">
+
+                <button
+                    type="button"
+                    class="music-button"
+                    id="musicToggle"
+                    aria-label="Putar ambience"
+                    aria-pressed="false"
+                >
+                    <span class="music-icon" aria-hidden="true">♫</span>
+                </button>
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuToggle"
+                    aria-label="Buka menu"
+                    aria-expanded="false"
+                    aria-controls="mobileMenu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="index.html" class="mobile-link page-link">
+                Home
+            </a>
+
+            <a href="about.html" class="mobile-link page-link">
+                About
+            </a>
+
+            <a
+                href="gallery.html"
+                class="mobile-link active"
+                aria-current="page"
+            >
+                Gallery
+            </a>
+
+            <a href="notes.html" class="mobile-link page-link">
+                Notes
+            </a>
+
+            <a href="surprise.html" class="mobile-link page-link">
+                Surprise
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section
+            class="inner-hero"
+            aria-labelledby="gallery-title"
+        >
+            <div class="inner-hero-content reveal">
+
+                <p class="eyebrow">
+                    02 · GALLERY
+                </p>
+
+                <h1 id="gallery-title">
+                    Little pieces
+                    <br>
+                    <em>of memory.</em>
+                </h1>
+
+                <p>
+                    Beberapa momen kecil yang layak untuk
+                    disimpan lebih lama.
+                </p>
+
+            </div>
+
+            <div
+                class="inner-hero-number reveal reveal-delay"
+                aria-hidden="true"
+            >
+                02
+            </div>
+        </section>
+
+        <section class="content-section">
+
+            <div class="section-label reveal">
+                <span>THE ARCHIVE</span>
+                <span>01 / 03</span>
+            </div>
+
+            <div class="gallery-grid nabina-gallery">
+
+                <figure class="gallery-item gallery-large reveal">
+                    <div class="gallery-photo-wrap">
+                        <img src="assets/images/nabina1.jpeg" alt="Nabina — moment 01" class="gallery-photo">
+                        <span class="photo-heart">♡</span>
+                    </div>
+                    <figcaption>
+                        <span>01</span>
+                        <p>lowkey, kamu tuh my favorite notification. ♡</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item reveal reveal-delay">
+                    <div class="gallery-photo-wrap">
+                        <img src="assets/images/nabina2.jpeg" alt="Nabina — moment 02" class="gallery-photo">
+                        <span class="photo-heart">♥</span>
+                    </div>
+                    <figcaption>
+                        <span>02</span>
+                        <p>nggak mau overclaim, but somehow my eyes always look for you.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item reveal reveal-delay-2">
+                    <div class="gallery-photo-wrap">
+                        <img src="assets/images/nabina3.jpeg" alt="Nabina — moment 03" class="gallery-photo">
+                        <span class="photo-heart">♡</span>
+                    </div>
+                    <figcaption>
+                        <span>03</span>
+                        <p>you’re giving main character energy, and somehow I’m okay being in the audience.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item gallery-wide reveal">
+                    <div class="gallery-photo-wrap">
+                        <img src="assets/images/nabina4.jpeg" alt="Nabina — moment 04" class="gallery-photo">
+                        <span class="photo-heart">♥</span>
+                    </div>
+                    <figcaption>
+                        <span>04</span>
+                        <p>if liking you is a little delulu, then honestly… let me enjoy the plot. ♡</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <section class="content-section gallery-note">
+
+            <div class="section-label reveal">
+                <span>REMEMBER</span>
+                <span>02 / 03</span>
+            </div>
+
+            <div class="gallery-note-content reveal">
+
+                <p class="eyebrow">
+                    A SMALL REMINDER
+                </p>
+
+                <h2>
+                    Not every picture
+                    <em>needs a story.</em>
+                </h2>
+
+                <p>
+                    Kadang cukup tahu bahwa pada hari itu,
+                    kita pernah merasa bahagia.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="next-chapter reveal">
+
+            <div>
+                <p class="eyebrow">
+                    NEXT CHAPTER
+                </p>
+
+                <h2>
+                    Read some
+                    <em>notes.</em>
+                </h2>
+            </div>
+
+            <a
+                href="notes.html"
+                class="primary-button page-link"
+            >
+                Open Notes
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <p>
+                NABINA <span>♡</span>
+            </p>
+
+            <p>
+                made softly, with a little care
+            </p>
+
+            <p>
+                © <span id="currentYear"></span>
+                Nabina Universe
+            </p>
+
+        </div>
+    </footer>
+
+    <audio id="ambience" loop preload="none">
+        <source
+            src="assets/audio/Nadhif Basalamah - penjaga hati Lirik.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>

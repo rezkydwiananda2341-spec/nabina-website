@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Sebuah little universe yang dibuat khusus untuk Nabina — berisi cerita, memories, notes, dan sebuah surprise."
+    >
+
+    <meta
+        name="author"
+        content="Nabina Universe"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f5f2ec"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Nabina — A Little Universe"
+    >
+
+    <meta
+        property="og:description"
+        content="A little corner of the internet made especially for Nabina."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="assets/images/og-cover.jpg"
+    >
+
+    <!-- Canonical -->
+    <!-- NANTI GANTI nabina.example DENGAN DOMAIN ASLI LU -->
+    <link
+        rel="canonical"
+        href="https://nabina.example/"
+    >
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="assets/images/favicon.png"
+        type="image/png"
+    >
+
+    <!-- Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <title>
+        Nabina — A Little Universe
+    </title>
+</head>
+
+
+<body>
+
+    <!-- ==================================
+         PAGE TRANSITION
+    =================================== -->
+
+    <div
+        class="page-transition"
+        aria-hidden="true"
+    >
+        <div class="transition-symbol">
+            ♡
+        </div>
+    </div>
+
+
+    <!-- ==================================
+         NAVBAR
+    =================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Navigasi utama"
+        >
+
+            <!-- BRAND -->
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="Nabina Home"
+            >
+
+                <span class="brand-name">
+                    NABINA
+                </span>
+
+                <span
+                    class="brand-heart"
+                    aria-hidden="true"
+                >
+                    ♡
+                </span>
+
+            </a>
+
+
+            <!-- DESKTOP NAV -->
+
+            <div class="nav-links">
+
+                <a
+                    href="index.html"
+                    class="nav-link active"
+                    aria-current="page"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="gallery.html"
+                    class="nav-link"
+                >
+                    Gallery
+                </a>
+
+                <a
+                    href="notes.html"
+                    class="nav-link"
+                >
+                    Notes
+                </a>
+
+                <a
+                    href="surprise.html"
+                    class="nav-link"
+                >
+                    Surprise
+                </a>
+
+            </div>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <button
+                    type="button"
+                    class="music-button"
+                    id="musicToggle"
+                    aria-label="Putar ambience"
+                    aria-pressed="false"
+                >
+
+                    <span
+                        class="music-icon"
+                        aria-hidden="true"
+                    >
+                        ♫
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    id="menuToggle"
+                    aria-label="Buka menu"
+                    aria-expanded="false"
+                    aria-controls="mobileMenu"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- MOBILE NAV -->
+
+        <div
+            class="mobile-menu"
+            id="mobileMenu"
+        >
+
+            <a
+                href="index.html"
+                class="mobile-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="about.html"
+                class="mobile-link"
+            >
+                About
+            </a>
+
+            <a
+                href="gallery.html"
+                class="mobile-link"
+            >
+                Gallery
+            </a>
+
+            <a
+                href="notes.html"
+                class="mobile-link"
+            >
+                Notes
+            </a>
+
+            <a
+                href="surprise.html"
+                class="mobile-link"
+            >
+                Surprise
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==================================
+         MAIN
+    =================================== -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section
+            class="hero"
+            aria-labelledby="hero-title"
+        >
+
+            <!-- HERO TEXT -->
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
+                    A LITTLE UNIVERSE FOR
+                </p>
+
+
+                <h1 id="hero-title">
+
+                    Hi,
+                    <em>Nabina.</em>
+
+                    <br>
+
+                    This little place
+                    is yours.
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Sebuah sudut kecil di internet
+                    yang dibuat untuk menyimpan
+                    cerita, memories, kata-kata,
+                    dan beberapa hal yang mungkin
+                    bikin kamu tersenyum.
+
+                </p>
+
+
+                <!-- HERO ACTION -->
+
+                <div class="hero-actions">
+
+                    <a
+                        href="about.html"
+                        class="primary-button page-link"
+                    >
+
+                        <span>
+                            Explore this place
+                        </span>
+
+                        <span
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="surprise.html"
+                        class="text-button page-link"
+                    >
+
+                        Psst...
+                        there's a surprise
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div
+                class="hero-visual reveal reveal-delay"
+                aria-hidden="true"
+            >
+
+                <div class="visual-glow"></div>
+
+
+                <div class="visual-orbit orbit-one"></div>
+
+                <div class="visual-orbit orbit-two"></div>
+
+
+                <div class="visual-sun"></div>
+
+
+                <div class="visual-symbol symbol-one">
+                    ✦
+                </div>
+
+                <div class="visual-symbol symbol-two">
+                    ✧
+                </div>
+
+                <div class="visual-symbol symbol-three">
+                    ·
+                </div>
+
+
+                <!-- MAIN ORB -->
+
+                <div class="main-orb">
+
+                    <div class="inner-orb">
+
+                        <span class="orb-letter">
+                            N
+                        </span>
+
+                        <span class="orb-caption">
+                            for Nabina
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             INTRO STRIP
+        =================================== -->
+
+        <section
+            class="intro-strip reveal"
+            aria-label="Pengantar"
+        >
+
+            <span class="strip-number">
+                01
+            </span>
+
+
+            <p>
+
+                Some people make ordinary moments
+                feel a little more special.
+
+            </p>
+
+
+            <span
+                class="strip-symbol"
+                aria-hidden="true"
+            >
+                ♡
+            </span>
+
+        </section>
+
+
+        <!-- ==================================
+             FEATURED SECTIONS
+        =================================== -->
+
+        <section
+            class="home-features"
+            aria-label="Isi website"
+        >
+
+            <!-- FEATURE 1 -->
+
+            <a
+                href="gallery.html"
+                class="feature-card feature-card-large reveal page-link"
+            >
+
+                <div class="feature-card-top">
+
+                    <span>
+                        02
+                    </span>
+
+                    <span>
+                        Gallery →
+                    </span>
+
+                </div>
+
+
+                <div class="feature-card-content">
+
+                    <p class="feature-kicker">
+                        LITTLE MOMENTS
+                    </p>
+
+                    <h2>
+                        Things worth
+                        <em>remembering.</em>
+                    </h2>
+
+                    <p>
+                        Kumpulan momen yang pantas
+                        disimpan lebih lama.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- FEATURE 2 -->
+
+            <a
+                href="notes.html"
+                class="feature-card feature-card-note reveal reveal-delay page-link"
+            >
+
+                <div class="feature-card-top">
+
+                    <span>
+                        03
+                    </span>
+
+                    <span>
+                        Notes →
+                    </span>
+
+                </div>
+
+
+                <div class="note-preview">
+
+                    <span class="note-heart">
+                        ♡
+                    </span>
+
+                    <p class="note-label">
+                        DEAR NABINA,
+                    </p>
+
+                    <p class="note-preview-text">
+                        Kalau suatu hari kamu membuka
+                        halaman ini lagi...
+                    </p>
+
+                    <span class="note-more">
+                        read more
+                    </span>
+
+                </div>
+
+            </a>
+
+        </section>
+
+
+        <!-- ==================================
+             FINAL CTA
+        =================================== -->
+
+        <section
+            class="final-cta reveal"
+            aria-labelledby="cta-title"
+        >
+
+            <p class="eyebrow">
+                ONE LAST THING
+            </p>
+
+
+            <h2 id="cta-title">
+
+                Maybe you should
+                <em>click it.</em>
+
+            </h2>
+
+
+            <p>
+
+                Ada satu halaman yang sengaja
+                gw simpan paling belakang.
+
+            </p>
+
+
+            <a
+                href="surprise.html"
+                class="primary-button page-link"
+            >
+
+                Open the surprise
+                <span aria-hidden="true">
+                    ✦
+                </span>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================
+         FOOTER
+    =================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <p>
+                NABINA <span>♡</span>
+            </p>
+
+            <p>
+                made softly, with a little care
+            </p>
+
+            <p>
+                © <span id="currentYear"></span>
+                Nabina Universe
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================================
+         BACKGROUND AUDIO
+    =================================== -->
+
+    <audio
+        id="ambience"
+        loop
+        autoplay
+        preload="auto"
+    >
+
+        <source
+            src="assets/audio/Nadhif Basalamah - penjaga hati Lirik.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- ==================================
+         JAVASCRIPT
+    =================================== -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+</body>
+</html>
